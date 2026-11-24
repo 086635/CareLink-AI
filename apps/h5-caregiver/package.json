@@ -1,0 +1,25 @@
+{
+  "name": "@carelink/h5-caregiver",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc -b && vite build",
+    "test": "echo \"h5-caregiver: no tests\""
+  },
+  "dependencies": {
+    "@carelink/api-client": "workspace:*",
+    "@carelink/shared-types": "workspace:*",
+    "pinia": "^2.2.2",
+    "socket.io-client": "^4.7.5",
+    "vant": "^4.9.6",
+    "vue": "^3.4.38",
+    "vue-router": "^4.4.3"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.1.2",
+    "typescript": "^5.5.4",
+    "vite": "^5.4.2",
+    "vue-tsc": "^2.0.29"
+  }
+}

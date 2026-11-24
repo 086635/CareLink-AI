@@ -1,0 +1,34 @@
+{
+  "name": "carelink-ai",
+  "version": "1.0.0",
+  "private": true,
+  "description": "CareLink-AI 智护无忧 - AIoT 老年智能照护管理平台（华为 ICT 大赛）",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "build": "pnpm -r --filter '!**simulator-cli' build",
+    "dev:server": "pnpm --filter @carelink/server start:dev",
+    "dev:web": "pnpm --filter @carelink/web-admin dev",
+    "dev:h5": "pnpm --filter @carelink/h5-caregiver dev",
+    "test": "pnpm -r test",
+    "lint": "eslint .",
+    "migration:run": "pnpm --filter @carelink/server migration:run",
+    "migration:revert": "pnpm --filter @carelink/server migration:revert"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "eslint": "^9.10.0",
+    "typescript-eslint": "^8.5.0",
+    "typescript": "^5.5.4"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@nestjs/core",
+      "esbuild",
+      "vue-demi",
+      "bcryptjs",
+      "sqlite3"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "@carelink/web-admin",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc -b && vite build",
+    "test": "echo \"web-admin: no tests\""
+  },
+  "dependencies": {
+    "@carelink/api-client": "workspace:*",
+    "@carelink/shared-types": "workspace:*",
+    "axios": "^1.7.7",
+    "echarts": "^5.5.1",
+    "element-plus": "^2.8.2",
+    "pinia": "^2.2.2",
+    "socket.io-client": "^4.7.5",
+    "vue": "^3.4.38",
+    "vue-router": "^4.4.3"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.1.2",
+    "typescript": "^5.5.4",
+    "vite": "^5.4.2",
+    "vue-tsc": "^2.0.29"
+  }
+}

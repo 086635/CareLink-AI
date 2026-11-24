@@ -1,0 +1,20 @@
+{
+  "name": "@carelink/api-client",
+  "version": "1.0.0",
+  "private": true,
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/esm/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.cjs.json && tsc -p tsconfig.esm.json",
+    "test": "echo \"api-client: no tests\""
+  },
+  "dependencies": {
+    "@carelink/shared-types": "workspace:*",
+    "axios": "^1.7.7",
+    "socket.io-client": "^4.7.5"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "@carelink/simulator-cli",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "echo \"simulator-cli: no tests\""
+  },
+  "dependencies": {
+    "@carelink/shared-types": "workspace:*",
+    "axios": "^1.7.7"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4"
+  }
+}
